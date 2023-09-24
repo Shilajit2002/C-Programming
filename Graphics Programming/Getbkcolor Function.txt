@@ -1,0 +1,19 @@
+#include<graphics.h>
+#include<conio.h>
+int main()
+{
+	int gd=DETECT,gm;
+	int c;
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	setbkcolor(BLUE);
+	c=getbkcolor();
+	if(c==BLUE)
+	{	
+		outtext("Yes,This Color Is Blue");
+	}
+	else
+		outtext("No,This Color Is Not Blue");
+        getch();
+	closegraph();
+	return 0;
+}

@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    //variable declaration
+    float i,n;
+    float sum=0;
+    //print the statement
+    printf("Enter the Number of terms = ");
+    //get the value of n
+    scanf("%f",&n);
+    //loop for (1+1/2+1/3+......n) series
+    for(i=1;i<=n;i++)
+    {
+        sum+=(1/i);
+    }
+    printf("The Summation of the series is = %f",sum);
+}

@@ -1,0 +1,12 @@
+#include<graphics.h>
+#include<conio.h>
+int main()
+{
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	sector(200,100,0,90,20,50);
+	sector(200,300,0,240,20,50);
+        getch();
+	closegraph();
+	return 0;
+}

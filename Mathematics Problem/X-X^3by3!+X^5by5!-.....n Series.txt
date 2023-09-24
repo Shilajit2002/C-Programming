@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    //variable declaration
+    int i,x,n;
+    //print the statement
+    printf("Enter the value of X = ");
+    //get the value of X
+    scanf("%d",&x);
+    printf("Enter the Number of terms = ");
+    scanf("%d",&n);
+    float sum=0,temp=x;
+    //loop for X-X^3/3!+X^5/5!-.....n terms
+    for(i=3;i<((2*n)+1);i=i+2)
+    {
+        temp=((-1*temp)*(x*x))/(i*(i-1));
+        sum=sum+temp;
+    }
+    float k=x+sum;
+    printf("The Summation of the series is = %f",k);
+}

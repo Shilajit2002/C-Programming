@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a=4;
+    signed int b=3;
+    unsigned int c=6;
+    short int d=976;
+    long int e=202254515;
+    short signed int f=4556;
+    short unsigned int g=7443;
+    short signed int x=45;
+    short unsigned int y=7443;
+    long signed int z=4546546;
+    long unsigned int o=744346456;
+    float h=523.247;
+    double i=7796.214;
+    long double j=78214568.24158;
+    char k='S'; //Character
+    signed char l='H';
+    unsigned char m='I';
+    char n[10]="Shilajit\0"; //String
+    printf("a=%d\nb=%d\nc=%d\nd=%d\ne=%ld\nf=%d\ng=%d\nx=%d\ny=%d\nz=%ld\no=%ld\nh=%f\ni=%lf\nj=%Lf\nk=%c\nl=%c\nm=%c\nn=%s\n~",a,b,c,d,e,f,g,x,y,z,o,h,i,j,k,l,m,n);
+}

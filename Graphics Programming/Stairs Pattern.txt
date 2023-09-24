@@ -1,0 +1,21 @@
+#include<graphics.h>
+#include<conio.h>
+int main()
+{
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	setcolor(BLUE);
+	lineto(0,100);
+	lineto(100,100);
+	lineto(100,200);
+	lineto(200,200);
+	lineto(200,300);
+	lineto(300,300);
+	lineto(300,400);
+	lineto(400,400);
+	lineto(400,500);
+	lineto(500,500);
+        getch();
+	closegraph();
+	return 0;
+}

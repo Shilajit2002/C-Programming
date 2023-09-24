@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    //variable declaration
+    int i,n, temp, sum, currentDigit, fact;
+    //print the statement
+    printf("Enter a Number = ");
+    //get the value of n
+    scanf("%d",&n);
+    //store the value
+    temp = n;
+    sum = 0;
+    //loop for check the krishnamurthy number
+    while(n!=0)
+    {
+        currentDigit = n % 10;
+        fact = 1;
+        // finding factorial of the currentDigit
+        for(i=1; i<=currentDigit; i++)
+        {
+            fact *= i;
+        }
+        sum += fact;
+        n /= 10;
+    }
+    //condition for check the krishnamurthy number
+    if(sum == temp)
+    {
+        printf("%d is Krishnamurthy Number",temp);
+    }
+    else
+    {
+        printf("%d is not a Krishnamurthy Number",temp);
+    }
+}

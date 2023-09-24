@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main ()
+{
+    //variable declaration
+    int n,i,j,k=1;
+    //print the statement
+    printf("Enter the Number of Lines = ");
+    //get the value of n
+    scanf("%d",&n);
+    //outer loop for pattern
+    for(i=0; i<n; i++)
+    {
+        //inner loop for pattern
+        for(j=0;j<=i;j++)
+        {
+            printf("%d",k);
+            k++;
+            //condition for printing numbers
+            if(k==10)
+            {
+                k=1;
+            }
+        }   
+        //print the new line
+        printf("\n");
+    }
+}

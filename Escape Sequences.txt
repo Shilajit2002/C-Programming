@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    printf("Hello\nWorld\n"); //New Line Character
+    printf("Hello\tWorld\n"); //Tab Character
+    printf("\"Hello World\"\n"); //Double Quote
+    printf("\'Hello World\'\n"); //Single Quote
+    printf("Hello World\\Hello India\n");
+    printf("\aHello World\n"); //Alert Bell
+    printf("\rHello World\n"); //Carriage Return
+    printf("My mobile number is 7\a8\a7\a3\a9\a2\a3\a4\a0\a8\a\n"); //Alert Bell Not Working
+    printf("Hello\bWorld\n"); //Backspace Character
+    printf("Hello\vWorld\n"); //Vertical Tab Character
+    printf("Hello\fWorld\n"); //Form Feed Character
+    printf("Hello World\?\n"); //Question Character
+    printf("\x41\n"); //Hexadecimal Character Print the ASCII Value.41 is Hex its decimal is 65 so ASCII Char is A
+    printf("\141\n"); //Octal Character Print the ASCII Value.141 is Octal its decimal is 97 so ASCII Char is a
+    printf("GH\0GH"); //Null Character.Before Null Char GH is print but after Null Char GH is not print
+}

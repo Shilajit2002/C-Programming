@@ -1,0 +1,25 @@
+#include<graphics.h>
+#include<conio.h>
+int main()
+{
+	int gd=DETECT,gm;
+	int i,x,y;
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	while(!kbhit()) //kbhit=Keyboard Hit
+	{
+		setcolor(15);
+		circle(500,100,50);
+		floodfill(500,100,15);
+		for(i=1;i<=50;i++)
+		{
+			x=rand()%getmaxx();
+			y=rand()%getmaxy();
+			putpixel(x,y,15);
+		}
+		delay(100);
+		cleardevice();
+	}
+        getch();
+	closegraph();
+	return 0;
+}

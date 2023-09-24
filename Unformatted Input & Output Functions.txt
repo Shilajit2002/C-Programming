@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    // Unformatted Input & Output Functions
+    char e[10];
+    gets(e);
+    puts(e);
+    char ch;
+    ch=getch();
+    printf("Ch=%c\n",ch);
+    char c;
+    c=getche();
+    printf("Ch=%c\n",c);
+    char d;
+    d=getchar();
+    putch(d);
+    putchar('\n');
+    putchar(d);
+}

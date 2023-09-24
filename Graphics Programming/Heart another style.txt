@@ -1,0 +1,16 @@
+#include<graphics.h>
+#include<dos.h> //This is for delay function
+#include<conio.h>
+int main()
+{
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	setcolor(RED);
+	setfillstyle(SOLID_FILL,RED);
+	sector(250,150,0,180,50,45);
+	sector(350,150,0,180,50,45);
+	sector(300,150,180,360,100,175);
+        	getch();
+	closegraph();
+	return 0;
+}

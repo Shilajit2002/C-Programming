@@ -1,0 +1,186 @@
+#include<graphics.h>
+#include<dos.h>
+#include<conio.h>
+int main()
+{
+	int gd=DETECT,gm;
+	int i,y2=220,y1=220,x3=50,x1=100,x2=75,x=-50,y=-10,j=-50,k=-70,l=10,m=150,n=0,a=310,b=410,c=370,d=320,e=40,f=90,g=270,sm=0;
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	delay(500);
+	setcolor(LIGHTBLUE);
+	settextstyle(3,HORIZ_DIR,5);
+	outtextxy(100,50,"HAPPY BIRTHDAY WIFI");
+	delay(500);
+	setcolor(RED);
+	settextstyle(5,HORIZ_DIR,3);
+	outtextxy(50,100,"Many Many Happy Returns of the Day,** SONA**");
+	for(i=0;i<176;i++)
+	{
+		
+		if(i==0)
+		{
+			delay(500);
+			setcolor(YELLOW);
+			outtextxy(300,150,"*");
+		}
+		else if(i==1)
+		{
+			delay(500);
+			setcolor(YELLOW);
+			outtextxy(300,159,"*");
+		}
+		else if(i==2)
+		{
+			delay(500);
+			setcolor(MAGENTA);
+			setfillstyle(SLASH_FILL,BLUE);
+			bar(298,181,309,220);
+		}
+		else if (i>2&&i<60)
+		{
+			delay(100);
+			setcolor(BROWN);
+			setfillstyle(WIDE_DOT_FILL,BROWN);
+			bar(250,y2,357,y1);
+			y2++;
+			y1++;
+		}
+		else if (i>=60&&i<118)
+		{
+			delay(100);
+			setcolor(GREEN);
+			setfillstyle(LINE_FILL,GREEN);
+			bar(200,y2,407,y1);
+			y2++;
+			y1++;
+		}
+		if(i==119)
+		{
+			setcolor(WHITE);
+			outtextxy(230,290,"Sweetheart Jannu");
+		}
+		else if(i>119&&i<175)
+		{
+			delay(100);
+			setcolor(LIGHTGRAY);
+			setfillstyle(INTERLEAVE_FILL,LIGHTGRAY);
+			bar(150,y2,457,y1);
+			y2++;
+			y1++;
+		}
+		if(i==175)
+		{
+			delay(1000);
+			setcolor(CYAN);
+			settextstyle(3,HORIZ_DIR,2);
+			outtextxy(120,y2+50,"**A BIG HUG..**..Kiss...Chummuuuuu** ");
+		}
+	}
+	getch();
+	cleardevice();
+	setcolor(RED);
+	settextstyle(3,HORIZ_DIR,3);
+	delay(300);
+	outtextxy(50,50,"**YOU ARE MY LOVE**YOU ARE MY SMILE**");
+	delay(300);
+	outtextxy(50,100,"**STAY HAPPY ALWAYS**GOD BLESS YOU**");
+	delay(300);
+	outtextxy(50,150,"**A BIG HEART FOR YOU BABY **");
+	delay(100);
+	setfillstyle(SOLID_FILL,RED);
+	sector(250,300,0,180,50,45);
+	sector(350,300,0,180,50,45);
+	line(200,300,300,450);
+	line(300,450,400,300);
+	floodfill(250,350,RED);
+	getch();
+	cleardevice();
+	for(i=0;i<3;i++)
+	{
+		delay(100);
+		setcolor(RED);
+		sector(x3,150,0,180,25,20);
+		x3=x3+50;
+		sector(x1,150,180,0,25,20);
+		x1=x1+50;	
+		sector(x2,150,180,360,50,75);
+		x2=x2+100;
+	}
+	outtextxy(200,350,"**We will going this car for trip**");
+	getch();
+	cleardevice();
+	for(i=0;i<700;i++)
+	{
+		setbkcolor(LIGHTBLUE);
+
+		
+		setcolor(BROWN);
+		setlinestyle(SOLID_LINE,0,3);
+		line(0,340,700,340);
+
+		setcolor(BLUE);
+		setlinestyle(SOLID_LINE,0,3);
+		line(x,200,y,200);
+		line(j,200,j,220);
+		line(k,220,j,220);
+		line(k,220,k,280);
+		line(k,280,x,300);
+		line(x,300,y,300);
+		ellipse(m,200,0,180,160,70);
+
+	
+		setcolor(MAGENTA);
+		setfillstyle(INTERLEAVE_FILL,MAGENTA);
+		sector(m,200,0,180,140,60);
+
+	
+		setcolor(BLUE);
+		setlinestyle(SOLID_LINE,0,3);
+		line(a,200,b,220);
+		line(b,220,b,300);
+		line(c,300,b,300);
+		arc(d,300,0,180,50);
+		arc(e,300,0,180,50);
+		line(f,300,g,300);
+		
+	
+		setcolor(DARKGRAY);
+		setfillstyle(CLOSE_DOT_FILL,DARKGRAY);
+		pieslice(e,300,0,360,40);
+		pieslice(d,300,0,360,40);
+
+	
+		x++;
+		y++;
+		j++;
+		k++;
+		l++;
+		m++;
+		n++;
+		a++;
+		b++;
+		c++;
+		d++;
+		e++;
+		f++;
+		g++;
+		delay(50);
+		cleardevice();
+	}
+	getch();
+	cleardevice();
+	for(i=0;i<800;i++)
+	{
+			
+		setcolor(BROWN);
+		settextstyle(3,HORIZ_DIR,4);
+		outtextxy(sm,200,"SM");
+		sm++;
+		delay(50);
+		cleardevice();
+	}
+		
+        	getch();
+	closegraph();
+	return 0;
+}

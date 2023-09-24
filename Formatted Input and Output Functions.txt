@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    // Formatted Input Functions
+    float b,e;
+    scanf("%4f",&b);
+    printf("b=%f\n",b);
+    scanf("%4.3f",&e); //Not Working
+    printf("b=%f\n",e);
+    // Formatted Output Functions
+    float a=1234.5678;
+    printf("%4.2f\n",a);
+    printf("%10.2f\n",a);
+    printf("%10.4f\n",a);
+    printf("%-10.2fHello\n",a);
+}

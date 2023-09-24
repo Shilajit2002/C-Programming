@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    //variable declaration
+    int n,originalN,remainder,reverseN=0;
+    //print the statement
+    printf("Enter a Number = ");
+    //get the value of n
+    scanf("%d",&n);
+    //store the value of n
+    originalN=n;
+    //loop for check the palindrome number
+    while(n!=0)
+    {
+        remainder=n%10;
+        reverseN=reverseN*10+remainder;
+        n/=10;
+    }
+    //condition for check the palindrome number
+    if(originalN==reverseN)
+    {
+        printf("%d is a Palindrome Number",originalN);
+    }
+    else
+        printf("%d is a Not Palindrome Number",originalN);
+}

@@ -1,0 +1,73 @@
+#include<graphics.h>
+#include<dos.h> //This is for delay function
+#include<conio.h>
+int main()
+{
+	int gd=DETECT,gm;
+	int i,x=-50,y=-10,j=-50,k=-70,l=10,m=150,n=0,a=310,b=410,c=370,d=320,e=40,f=90,g=270;
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	for(i=0;i<700;i++)
+	{
+		setbkcolor(LIGHTCYAN);
+
+		//Set the Road Color
+		setcolor(BROWN);
+		setlinestyle(SOLID_LINE,0,3);
+		line(0,340,700,340);
+
+		//Set the color of car upperportion
+		setcolor(BLUE);
+		setlinestyle(SOLID_LINE,0,3);
+		line(x,200,y,200);
+		line(j,200,j,220);
+		line(k,220,j,220);
+		line(k,220,k,280);
+		line(k,280,x,300);
+		line(x,300,y,300);
+		ellipse(m,200,0,180,160,70);
+
+		//Set the color of car Inside
+		setcolor(MAGENTA);
+		setfillstyle(INTERLEAVE_FILL,MAGENTA);
+		sector(m,200,0,180,140,60);
+
+		//Set the color of car loweportion
+		setcolor(BLUE);
+		setlinestyle(SOLID_LINE,0,3);
+		line(a,200,b,220);
+		line(b,220,b,300);
+		line(c,300,b,300);
+		arc(d,300,0,180,50);
+		arc(e,300,0,180,50);
+		line(f,300,g,300);
+		
+		//Set color of Wheel
+		setcolor(DARKGRAY);
+		setfillstyle(CLOSE_DOT_FILL,DARKGRAY);
+		pieslice(e,300,0,360,40);
+		pieslice(d,300,0,360,40);
+
+		//Increase the Value
+		x++;
+		y++;
+		j++;
+		k++;
+		l++;
+		m++;
+		n++;
+		a++;
+		b++;
+		c++;
+		d++;
+		e++;
+		f++;
+		g++;
+
+		//Delay the loop
+		delay(50);
+		cleardevice();
+	}
+        getch();
+	closegraph();
+	return 0;
+}

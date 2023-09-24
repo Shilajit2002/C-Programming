@@ -1,0 +1,22 @@
+#include<graphics.h>
+#include<conio.h>
+int main()
+{
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	setbkcolor(YELLOW);
+	setcolor(RED);
+	setfillstyle(SLASH_FILL,GREEN);
+	sector(300,300,0,180,50,100);
+	setcolor(BLUE);
+	line(100,300,500,300);
+	line(300,150,300,450);
+	setcolor(MAGENTA);
+	outtextxy(95,297,"X");
+	outtextxy(502,300,"Y");
+	outtextxy(300,148,"X'");
+	outtextxy(300,452,"Y'");
+        getch();
+	closegraph();
+	return 0;
+}

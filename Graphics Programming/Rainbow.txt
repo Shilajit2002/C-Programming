@@ -1,0 +1,47 @@
+#include<graphics.h>
+#include<dos.h> //This is for delay function
+#include<conio.h>
+int main()
+{
+	int gd=DETECT,gm;
+	int i,x,y;
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	x=getmaxx()/2;
+	y=300;
+	for(i=50;i<190;i++)
+	{
+		delay(100);
+		if(i<=69)
+		{
+			setcolor(MAGENTA);
+		}
+		else if(i>=70&&i<=89)
+		{
+			setcolor(LIGHTBLUE);
+		}
+		else if(i>=90&&i<=109)
+		{
+			setcolor(CYAN);
+		}
+		else if(i>=110&&i<=129)
+		{
+			setcolor(GREEN);
+		}
+		else if(i>=130&&i<=149)
+		{
+			setcolor(YELLOW);
+		}
+		else if(i>=150&&i<=169)
+		{
+			setcolor(LIGHTRED);
+		}
+		else if(i>=170&&i<=189)
+		{
+			setcolor(RED);
+		}
+		arc(x,y,0,180,i);
+	}
+        	getch();
+	closegraph();
+	return 0;
+}

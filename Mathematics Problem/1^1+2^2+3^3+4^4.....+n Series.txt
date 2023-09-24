@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    //variable declaration
+    int i,n,sum=0,a;
+    //print the statement
+    printf("Enter the Number of terms = ");
+    //get the value of n
+    scanf("%d",&n);
+    //loop for (1^1+2^2+3^3+4^4.....+n) series
+    for(i=1;i<=n;i++)
+    {
+        a=pow(i,i);
+        sum=sum+a;
+    }
+    printf("The Summation of the series is = %d",sum);
+}
